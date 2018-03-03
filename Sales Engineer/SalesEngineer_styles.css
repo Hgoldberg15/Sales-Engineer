@@ -1,0 +1,19 @@
+h1 {
+	text-align: center;
+	font-size: 25px;
+}
+.page-center {
+	width:50%;
+	max-width: 500px;
+	margin: auto;
+	margin-top: 8em;
+
+}
+
+/*Form styles*/
+
+input {
+	width: 100%;
+	margin: 1em 0 1em 0;
+	padding: 1em;
+}
