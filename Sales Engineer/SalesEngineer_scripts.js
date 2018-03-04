@@ -21,14 +21,14 @@ var bodyParser = require('body-parser');
 // build the data object to require the parameters in the API, when a post request is received, goes through and says "get" from the request the body of the thing, which is called "firstname"
 
 var postData = querystring.stringify({
-    'email': req.body.email,
-    'firstname': req.body.firstname,
-    'lastname': req.body.lastname,
+    'email': request.body.email,
+    'firstname': request.body.firstname,
+    'lastname': request.body.lastname,
     'hs_context': JSON.stringify({
-        "hutk": req.cookies.hubspotutk,
-        "ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,
-        "pageUrl": req.body.pageUrl,
-        "pageName": req.body.pageName,
+        "hutk": request.cookies.hubspotutk,
+        "ipAddress": request.headers['x-forwarded-for'] || req.connection.remoteAddress,
+        "pageUrl": request.body.pageUrl,
+        "pageName": request.body.pageName,
     })
 });
 
